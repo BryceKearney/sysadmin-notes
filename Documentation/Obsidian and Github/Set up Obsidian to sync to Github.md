@@ -20,7 +20,7 @@ Below are step-by-step instructions for setting up a sync between Obsidian and G
    - Click the “+” icon in the top-right corner and select “New repository.”
    - Name it (e.g., `MyObsidianVault`).
    - Choose “Private” (recommended for personal notes) or “Public.”
-   - Recommended not to have a readme file, and to use a MIT 
+   - Recommended not to have a readme file, and to use a MIT License
    - Click “Create repository.”
 3. **Copy the Repository URL**:
    - On the repository page, click the green “Code” button and copy the HTTPS URL (e.g., `https://github.com/your-username/MyObsidianVault.git`).
@@ -30,7 +30,7 @@ Below are step-by-step instructions for setting up a sync between Obsidian and G
    - Open Obsidian and create a new vault (e.g., `MyVault`) or use an existing one.
    - Note the vault’s folder location (e.g., `/path/to/MyVault`).
 2. **Initialize a Git Repository in the Vault**:
-   - Open a terminal (or Git Bash on Windows) and navigate to your vault’s folder:
+   - Open a terminal (recommended to use Git Bash on Windows) and navigate to your vault’s folder:
      ```bash
      cd /path/to/MyVault
      ```
@@ -63,8 +63,8 @@ Below are step-by-step instructions for setting up a sync between Obsidian and G
    - Optionally, enable “Pull updates on startup” to fetch changes when Obsidian starts.
 
 #### Step 4: Authenticate with GitHub
-1. **Generate a Personal Access Token** (if needed):
-   - Go to GitHub > Settings > Developer settings > Personal access tokens > Tokens (classic).
+1. **Generate a Personal Access Token** (Recommended, easier):
+   - Go to GitHub > Settings > Developer settings (bottom left) > Personal access tokens > Tokens (classic).
    - Click “Generate new token.”
    - Name it (e.g., `ObsidianSync`), select `repo` scope, and generate.
    - Copy the token and store it securely.
@@ -99,10 +99,11 @@ Below are step-by-step instructions for setting up a sync between Obsidian and G
    - Create or edit a note in Obsidian.
 2. **Check Sync**:
    - Wait for the auto-commit interval or manually trigger a commit/push via Obsidian’s command palette:
-     - Open the command palette (`Ctrl/Cmd + P`).
+     - Open the command palette (`Ctrl/Cmd + P` in Obsidian).
      - Run “Obsidian Git: Commit all changes” and “Obsidian Git: Push.”
    - Verify the changes appear on GitHub.
-3. **Pull Changes on Another Device**:
+- 
+(Not needed I believe) **Pull Changes on Another Device**:
    - On another device, clone the repository to a new vault folder:
      ```bash
      git clone https://github.com/your-username/MyObsidianVault.git /path/to/MyVault
@@ -115,7 +116,7 @@ To prevent device-specific settings (like the `.obsidian` folder) from syncing a
 
 1. **Create the `.gitignore` File**:
    - Navigate to the root of your vault (e.g., `/path/to/MyVault`).
-   - Create a file named `.gitignore`:
+   - Create a file named `.gitignore`(In vault):
      - In a text editor, create `MyVault/.gitignore`.
      - Or in the terminal:
        ```bash
