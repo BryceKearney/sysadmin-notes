@@ -11,14 +11,12 @@
             "id": "e5bebebb282bc0a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
-                "mode": "source",
-                "source": false
+                "file": "RD Gateway.png"
               },
-              "icon": "lucide-file",
-              "title": "Grab folder permission folderpaths turn into subpaths"
+              "icon": "lucide-image",
+              "title": "RD Gateway"
             }
           }
         ]
@@ -140,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
+                "file": "RD Gateway.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Grab folder permission folderpaths turn into subpaths"
+              "title": "Outline of RD Gateway"
             }
           }
         ],
@@ -169,14 +167,14 @@
   },
   "active": "e5bebebb282bc0a3",
   "lastOpenFiles": [
+    "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
+    "Test it",
     "Certificates/Types of Certificates.md",
     "IT Notes/How to/Githubs/Intune/Intune Create Printers.md",
-    "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
     "Kustom Notes 1/Restart Timberscango.md",
     "Kustom Notes 1/Restart Sage server.md",
     "Kustom Notes 1/New Hires.md",
     "Kustom Notes 1",
-    "Untitled",
     "Kustom Notes/Restart Timberscango.md",
     "Kustom Notes/Restart Sage server.md",
     "Kustom Notes/New Hires.md",
@@ -212,7 +210,6 @@
     "Auotmation",
     "Kustom Notes/Kustom Notes.md",
     "Kustom Notes",
-    "IT Notes/Scripts.md",
     "IT Notes/InTune/Add printer via Intune via App32/Pasted image 20250402161527.png",
     "Pasted image 20250402161210.png",
     "Pasted image 20250402161158.png",
