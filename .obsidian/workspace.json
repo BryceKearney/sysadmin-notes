@@ -11,14 +11,10 @@
             "id": "e5bebebb282bc0a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
         ]
@@ -167,7 +163,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5bebebb282bc0a3",
+  "active": "0282a937bd5c0232",
   "lastOpenFiles": [
     "test2/Test it/Test for Obsidian.md",
     "Untitled.md",
