@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test it/Test for Obsidian.md",
+                "file": "test2/Test it/Test for Obsidian.md",
                 "mode": "source",
                 "source": false
               },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test it/Test for Obsidian.md",
+                "file": "test2/Test it/Test for Obsidian.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,11 +169,12 @@
   },
   "active": "0282a937bd5c0232",
   "lastOpenFiles": [
+    "test2",
     "RD Gateway.png",
-    "Test it/Test for Obsidian.md",
+    "test2/Test it/Test for Obsidian.md",
     "Test1",
     "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
-    "Test it",
+    "test2/Test it",
     "Certificates/Types of Certificates.md",
     "IT Notes/How to/Githubs/Intune/Intune Create Printers.md",
     "Kustom Notes 1/Restart Timberscango.md",
