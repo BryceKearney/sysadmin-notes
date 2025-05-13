@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test2/Test it/Test for Obsidian.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Test for Obsidian"
+              "title": "Untitled"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test2/Test it/Test for Obsidian.md",
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Test for Obsidian"
+              "title": "Outline of Untitled"
             }
           }
         ],
@@ -167,11 +167,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0282a937bd5c0232",
+  "active": "e5bebebb282bc0a3",
   "lastOpenFiles": [
+    "test2/Test it/Test for Obsidian.md",
+    "Untitled.md",
+    "New folder",
     "test2",
     "RD Gateway.png",
-    "test2/Test it/Test for Obsidian.md",
     "Test1",
     "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
     "test2/Test it",
@@ -211,8 +213,6 @@
     "Automation/New Hire Automations/Foundation",
     "Auotmation/New Hire Automations/Untitled.canvas",
     "Auotmation/New Hire Automations.md",
-    "Automation/New Hire Automations",
-    "Automation",
     "IT Notes/InTune/Add printer via Intune via App32/Pasted image 20250402161527.png",
     "Pasted image 20250402161210.png",
     "Pasted image 20250402161158.png",
