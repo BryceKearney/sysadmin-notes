@@ -11,12 +11,14 @@
             "id": "e5bebebb282bc0a3",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "RD Gateway.png"
+                "file": "Test it/Test for Obsidian.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "RD Gateway"
+              "icon": "lucide-file",
+              "title": "Test for Obsidian"
             }
           }
         ]
@@ -138,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RD Gateway.png",
+                "file": "Test it/Test for Obsidian.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RD Gateway"
+              "title": "Outline of Test for Obsidian"
             }
           }
         ],
@@ -165,8 +167,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5bebebb282bc0a3",
+  "active": "0282a937bd5c0232",
   "lastOpenFiles": [
+    "RD Gateway.png",
+    "Test it/Test for Obsidian.md",
+    "Test1",
     "IT Notes/Scripts/Grab Folder permissions/Grab folder permission folderpaths turn into subpaths.md",
     "Test it",
     "Certificates/Types of Certificates.md",
@@ -183,33 +188,30 @@
     "Certificates/RD Gateway/Pasted image 20250418130059.png",
     "Certificates/RD Gateway/Pasted image 20250418114714.png",
     "Certificates/RD Gateway/How to renew RD Gateway certificate for RDS.md",
-    "RD Gateway.png",
-    "Auotmation/New Hire Automations/Foundation/Licenses needed for Intune.md",
+    "Automation/New Hire Automations/Foundation/Licenses needed for Intune.md",
     "Certificates/RD Gateway",
     "Certificates",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/✅ 1. Foundation - Tools & Services.md",
+    "Automation/New Hire Automations/Foundation/Onboarding/✅ 1. Foundation - Tools & Services.md",
     "IT Notes/InTune/Add printer via Intune via App32/Pasted image 20250402161310.png",
     "IT Notes/InTune/Add printer via Intune via App32/Execution Script.md",
     "IT Notes/InTune/Microsoft Tools/Install CMTrace if needing to trace Intune logs.md",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/Onboarding Automations set.canvas",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/🧰 6. Nice-to-Haves - Advanced.md",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/🧑‍💻 2. User Onboarding Automation.md",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/🖨 4. Printer Copier Deployment.md",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/🖥 3. Device Setup & Desktop Config.md",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/📦 5. App Deployment.md",
+    "Automation/New Hire Automations/Foundation/Onboarding/Onboarding Automations set.canvas",
+    "Automation/New Hire Automations/Foundation/Onboarding/🧰 6. Nice-to-Haves - Advanced.md",
+    "Automation/New Hire Automations/Foundation/Onboarding/🧑‍💻 2. User Onboarding Automation.md",
+    "Automation/New Hire Automations/Foundation/Onboarding/🖨 4. Printer Copier Deployment.md",
+    "Automation/New Hire Automations/Foundation/Onboarding/🖥 3. Device Setup & Desktop Config.md",
+    "Automation/New Hire Automations/Foundation/Onboarding/📦 5. App Deployment.md",
     "IT Notes/How to/How to links.md",
     "IT Notes/Untitled.md",
     "IT Notes/How to",
     "Untitled.canvas",
-    "Auotmation/New Hire Automations/Foundation/Onboarding/Testing & Maintenance.md",
-    "Auotmation/New Hire Automations/Foundation/Onboarding",
-    "Auotmation/New Hire Automations/Foundation",
+    "Automation/New Hire Automations/Foundation/Onboarding/Testing & Maintenance.md",
+    "Automation/New Hire Automations/Foundation/Onboarding",
+    "Automation/New Hire Automations/Foundation",
     "Auotmation/New Hire Automations/Untitled.canvas",
     "Auotmation/New Hire Automations.md",
-    "Auotmation/New Hire Automations",
-    "Auotmation",
-    "Kustom Notes/Kustom Notes.md",
-    "Kustom Notes",
+    "Automation/New Hire Automations",
+    "Automation",
     "IT Notes/InTune/Add printer via Intune via App32/Pasted image 20250402161527.png",
     "Pasted image 20250402161210.png",
     "Pasted image 20250402161158.png",
