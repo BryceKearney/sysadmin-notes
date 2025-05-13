@@ -1,0 +1,1 @@
+https://github.com/MSEndpointMgr/Intune/blob/master/Windows%2010/Install-Printer.ps1

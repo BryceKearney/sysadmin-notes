@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Bypass -File .\Install-Printer.ps1 -PortName "IP_10.10.10.254_2" -PrinterIP "10.10.10.254" -PrinterName "Receiving HP Copier" -DriverName "HP Smart Universal Printing" -INFFile "HPOneDriver_V4_x64.inf"

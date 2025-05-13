@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"07340b10b86e5361","type":"text","text":"[[✅ 1. Foundation - Tools & Services]]","x":-385,"y":-300,"width":250,"height":60},
+		{"id":"e6156c72cb342e73","type":"text","text":"[[Licenses needed for Intune]]","x":-385,"y":-520,"width":250,"height":60},
+		{"id":"0484bf8a804efeec","type":"text","text":"[[🧑‍💻 2. User Onboarding Automation]]","x":-585,"y":-120,"width":250,"height":60},
+		{"id":"e14311f3e79a3262","type":"text","text":"[[🖥 3. Device Setup & Desktop Config]]","x":-165,"y":-120,"width":250,"height":60},
+		{"id":"b6c5e3741009cdb6","type":"text","text":"[[📦 5. App Deployment]]","x":20,"y":80,"width":250,"height":50},
+		{"id":"ae368166e71c022d","type":"text","text":"[[🖨 4. Printer Copier Deployment]]","x":-335,"y":80,"width":250,"height":60},
+		{"id":"c89000bfd24e0e5c","type":"text","text":"[[🧰 6. Nice-to-Haves - Advanced]]","x":-40,"y":-440,"width":250,"height":60},
+		{"id":"692983105d8bbea7","x":-165,"y":260,"width":250,"height":60,"type":"text","text":"[[Testing & Maintenance]]"}
+	],
+	"edges":[
+		{"id":"451f17c2839a5e57","fromNode":"e6156c72cb342e73","fromSide":"bottom","toNode":"07340b10b86e5361","toSide":"top"},
+		{"id":"0d034fbeeeb5df79","fromNode":"07340b10b86e5361","fromSide":"bottom","toNode":"0484bf8a804efeec","toSide":"top"},
+		{"id":"fb724a10a975c465","fromNode":"07340b10b86e5361","fromSide":"bottom","toNode":"e14311f3e79a3262","toSide":"top"},
+		{"id":"2d9c8e4850d9dbd7","fromNode":"0484bf8a804efeec","fromSide":"right","toNode":"e14311f3e79a3262","toSide":"left"},
+		{"id":"660d292d1965b170","fromNode":"e14311f3e79a3262","fromSide":"bottom","toNode":"ae368166e71c022d","toSide":"top"},
+		{"id":"5bb82716bcafb0da","fromNode":"e14311f3e79a3262","fromSide":"bottom","toNode":"b6c5e3741009cdb6","toSide":"top"},
+		{"id":"92463c756083a09d","fromNode":"e6156c72cb342e73","fromSide":"right","toNode":"c89000bfd24e0e5c","toSide":"top"},
+		{"id":"b575bfa7e0d1d708","fromNode":"ae368166e71c022d","fromSide":"bottom","toNode":"692983105d8bbea7","toSide":"top"},
+		{"id":"5635636dd94de6b3","fromNode":"b6c5e3741009cdb6","fromSide":"bottom","toNode":"692983105d8bbea7","toSide":"top"}
+	]
+}
