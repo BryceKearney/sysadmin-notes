@@ -16,7 +16,8 @@ set-inform http://PUBLICIP:8080/inform
 
 -------------------------------
 
-If doesn't take UBNT password for switch, hold reset for full minute.
+If doesn't take UBNT password for switch, hold reset for full minute. If Adopted already, configure SSH in settings > control panel > SSH
+There is no limit of guessing as well, so if it's not working its wrong.
 
 Usually for unifi Switches and routers
 Username: ubnt
@@ -25,3 +26,7 @@ Password: ubnt
 For Unifi UXG
 Username: root
 Password: ubnt
+
+Older UBNT devices
+Username: ui
+Password: ui
