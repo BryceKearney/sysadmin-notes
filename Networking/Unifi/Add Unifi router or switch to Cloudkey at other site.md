@@ -1,6 +1,8 @@
 
 https://help.ui.com/hc/en-us/articles/204909754-Remote-Adoption-Layer-3
 
+Recommended USE PUTTY! https://www.putty.org/
+
 To Connect the Router to the Cloudkey at other site first do this
 
 Connect to it via ip > log in > you'll see all the others are grayed out > go to manually log in
