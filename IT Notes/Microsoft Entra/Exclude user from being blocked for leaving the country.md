@@ -10,3 +10,7 @@ Users > include, select users and groups > select user
 
 In Conditional Location Policy
 Users > Exclude, Users and groups > select users.
+
+----------------
+
+Tips - Remember to remove them, as you don't want them getting hacked.
