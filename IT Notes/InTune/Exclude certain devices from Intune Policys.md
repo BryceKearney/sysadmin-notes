@@ -17,7 +17,7 @@ You can find these attributes in the Intune admin center under **Devices** > **A
 
 1. **Sign in to the Microsoft Intune Admin Center**: Go to [https://intune.microsoft.com](https://intune.microsoft.com).
 2. **Navigate to Filters**:
-    - Go to **Tenant administration** > **Filters** (or **Devices** > **Filters**).
+    - Go to **Tenant administration** > **Filters**.
     - Click **Create** to start a new filter.
 3. **Configure the Filter**:
     - **Name and Description**: Use a descriptive name (e.g., "Exclude Specific Devices") and add an optional description.
