@@ -3,6 +3,8 @@ https://help.ui.com/hc/en-us/articles/204909754-Remote-Adoption-Layer-3
 
 Recommended USE PUTTY! https://www.putty.org/
 
+Tip: If it doesn't pick up the dynamic or static IP, sometimes resetting it and giving it 5 minutes will fix it
+
 To Connect the Router to the Cloudkey at other site first do this
 
 Connect to it via ip > log in > you'll see all the others are grayed out > go to manually log in
