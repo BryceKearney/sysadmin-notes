@@ -52,8 +52,6 @@ Download the Office Deployment Tool (ODT) from Microsoft:
 Place your configuration.xml in the same folder as setup.exe from ODT. Just beside each other.
 
 Run this command to install Office using your custom settings:
-
-bash
-Copy
-Edit
 setup.exe /configure configuration.xml
+
+It will generate the office 365 install
