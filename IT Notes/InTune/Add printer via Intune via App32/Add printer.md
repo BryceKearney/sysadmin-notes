@@ -1,4 +1,5 @@
 Youtube video: https://www.youtube.com/watch?v=8glLCjBytIA - Brett Benson
+A good guide: [How to install Printer Drivers and Printers from Intune using Win32 apps and PowerShell - MSEndpointMgr](https://msendpointmgr.com/2022/01/03/install-network-printers-intune-win32apps-powershell/)
 
 Go to printer driver folder
 Find .Cat and .inf file, if you none you need to enable show extensions at end of name. The type names are Security catalog and setup information as well.![[Pasted image 20250402161527.png]]
@@ -15,3 +16,4 @@ make the [[Execution Script]](Called Install command in intune), change this to 
 Make uninstall command   
 `powershell.exe -ExecutionPolicy Bypass -File .\Remove-Printer.ps1 -PrinterName "Receiving HP Copier"`
 Add detection rule for Registry key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Print\Printers\Receiving HP Copier
+
