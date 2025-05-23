@@ -19,4 +19,4 @@ If lazy, use this to format "New-Partition -UseMaximumSize -AssignDriveLetter |
 Open Hyper-v
 Add Hard drive > use phyiscal Hard disk
 ![[Pasted image 20250523104051.png]]
-You can now access it in Hyper-v, and on your disk
+You can now access it in Hyper-V, and on your disk
