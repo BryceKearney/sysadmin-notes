@@ -6,7 +6,12 @@ Import into Autopilot
 Go into Entra > manage MFA > Add TAP > Log into the machine using their username and password > Yes set PIN if your org requires it.
 Do everything you need to do on the new hires laptop
 Remove it from Entra MFA
-
+Launch CMD as admin
+takeown /f "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /r /d y
+icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /grant "%username%:F" /t
+Change username above
+cd C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc
+del /F /S /Q *.*
 
 
 # How to Reset Your PIN in Windows 11 CMD?
