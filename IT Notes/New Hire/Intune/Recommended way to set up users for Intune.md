@@ -42,7 +42,7 @@ This will launch the Command Prompt with elevated permissions, necessary for mak
 
 The NGC folder in Windows stores your PIN information. By **deleting this folder**, you will remove the current PIN configuration, enabling you to set a new PIN.
 
-1. In the Command Prompt window, type the following command: `cd C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\NGC`
+1. In the Command Prompt window, type the following command: `cd c:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc`
     
 2. Press **Enter**. This command navigates to the folder containing PIN data.
     
