@@ -2,12 +2,22 @@
 There are multiple commands to check the processor cores, here are a few and I'll give quick descriptions.
 
 ```
+lscpu -e
+```
+First favorite, easy to read, gives minimum, maximum, online, and currently used.
+
+watch -n 1 lscpu -e
+This updates it in real time
+
+-----------------
+
+```
 apt-get install cpufrequtils
 ```
 ```
 cpufreq-info
 ```
-My Favorite, gives cores beside it, minimum and maximum, if performance or power save is available. Also looks the best to me.
+second favorite, gives cores beside it, minimum and maximum, if performance or power save is available. Also looks the best to me.
 
 ---------------
 
