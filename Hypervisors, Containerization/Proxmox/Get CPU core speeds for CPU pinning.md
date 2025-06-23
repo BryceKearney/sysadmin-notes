@@ -6,3 +6,16 @@ lscpu | grep MHz
 ```
 Most basic, only gives fastest cores speed not good for if you have cores with different speeds.
 
+-------------
+
+```
+cat /proc/cpuinfo
+```
+Another basic command, doesn't seem seem to give top speeds but gives the minimum.
+
+--------
+
+```
+dmidecode -t processor
+```
+Better info to me than LSCPU
