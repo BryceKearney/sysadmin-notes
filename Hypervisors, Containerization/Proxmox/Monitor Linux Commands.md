@@ -1,4 +1,4 @@
-Commands to monitor Linux including resources, temperature, and more
+Commands to monitor Linux including resources, temperature, storage and more
 
 ```
 apt-get install htop
@@ -43,5 +43,32 @@ Basic, and works without installing anything.
 * Looks at available for actual free RAM.
 
 ----------------
+```
+apt-get install iotop
+```
+Installs iotop
+```
+iotop
+```
+Monitor disk I/O (input/output) by processes, requires sudo
 
+----
 
+```
+apt-get install net-tools
+```
+Always have Net tools
+```
+ss -tuln | grep 8006
+```
+example command to see if Proxmox's web UI port is listening.
+
+------
+
+```
+apt-get install iftop
+```
+Install iftop
+```
+iftop
+```
