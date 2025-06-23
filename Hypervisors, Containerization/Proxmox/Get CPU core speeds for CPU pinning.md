@@ -7,8 +7,7 @@ apt-get install cpufrequtils
 ```
 cpufreq-info
 ```
-My Favorite, gives cores beside it, minimum and maximum, if performance or powersave is available.
-Also look
+My Favorite, gives cores beside it, minimum and maximum, if performance or power save is available. Also looks the best to me.
 
 ---------------
 
