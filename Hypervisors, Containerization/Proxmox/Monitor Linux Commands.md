@@ -72,3 +72,26 @@ Install iftop
 ```
 iftop
 ```
+real-time bandwidth monitoring, good for watching what ip's.
+
+---------
+
+```
+apt-get install vnstat
+```
+Installs vnstat
+```
+vnstat -i eth0
+```
+Track network traffic over time
+- Replace eth0 with your network interface (find with ip a).
+- Shows daily/monthly bandwidth usage, useful for tracking Proxmox network load.
+
+-----
+
+```
+uptime
+```
+Check system load and uptime.
+
+-----------------
