@@ -20,18 +20,21 @@ journalctl -xe
 - **Real-Time Logs**: journalctl -f (like tail -f).
 
 ------------------
-
+Update and upgrade system packages. No more to it.
 ```
 apt update
 apt upgrade -y
 ```
-
+- Run regularly to apply security patches.
+- **Proxmox Note**: For Proxmox, ensure you’re subscribed to the appropriate repository (free or enterprise). Check /etc/apt/sources.list.d/pve-enterprise.list or use the no-subscription repo.
+- **Caution**: Always back up critical VMs before upgrading.
 
 -------------
-```
-dmesg | tail -n 20
-```
+Clean up unused packages and cache.
 
 ```
-dmesg | tail -n 20
+apt autoremove
+apt autoclean
 ```
+* Frees disk space and keeps the system tidy.
+* Make a backup first
