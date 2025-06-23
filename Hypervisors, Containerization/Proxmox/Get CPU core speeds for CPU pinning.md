@@ -1,4 +1,3 @@
-
 There are multiple commands to check the processor cores, here are a few and I'll give quick descriptions.
 
 ```
