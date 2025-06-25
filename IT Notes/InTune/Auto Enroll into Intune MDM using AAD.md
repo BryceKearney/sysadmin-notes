@@ -1,3 +1,6 @@
+Auto Enroll into Intune MDM using AAD (Azure Active Directory)
+
+
 Powershell - IntuneAutoEnroll
 Auto enrolls the device into Intune MDM
 ### Potential Considerations
@@ -165,3 +168,100 @@ You don’t need to modify the script to specify AAD credentials, but you should
 63. #* END OF SCRIPT
     
 64. #*=============================================================================
+
+Version 2.0 still needs tested.
+
+Changelog: 
+*  **Debugging**: Logging and specific error handling make troubleshooting easier.
+- **Flexibility**: Parameters for MDMApplicationId, MDMEnrollmentUrl, and timing allow use with various MDM providers.
+- **Reliability**: Azure AD join checks and task cleanup prevent common failures.
+- **Maintainability**: Documentation and structured code improve long-term usability.
+
+#*=============================================================================
+#* Script: MDM_AutoEnroll.ps1
+#* Purpose: Automates MDM enrollment for Azure AD-joined devices
+#* Version: 1.0
+#* Date: June 25, 2025
+#*=============================================================================
+
+param (
+    [string]$MDMApplicationId = "",
+    [string]$MDMEnrollmentUrl = "",
+    [int]$RunDelayMinutes = 5,
+    [int]$ExpirationMinutes = 10
+)
+
+function Write-Log {
+    param($Message, $PrependText = "INFO")
+    $LogPath = "C:\Logs\MDMEnroll.log"
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    "$Timestamp [$PrependText] $Message" | Out-File -FilePath $LogPath -Append
+    Write-Output "$Timestamp [$PrependText] $Message"
+}
+
+function Exit-Script {
+    param($ReturnCode)
+    Write-Log "Exiting script with return code: $ReturnCode" -PrependText "INFO"
+    exit $ReturnCode
+}
+
+try {
+    # Ensure log directory exists
+    $LogDir = "C:\Logs"
+    if (-not (Test-Path $LogDir)) { New-Item -Path $LogDir -ItemType Directory -Force }
+
+    # Check Azure AD join status
+    $AzureADStatus = dsregcmd /status
+    if (-not ($AzureADStatus | Select-String "AzureAdJoined : YES")) {
+        Write-Log "Device is not Azure AD-joined. MDM enrollment may fail." -PrependText "ERROR"
+        Exit-Script -ReturnCode -3
+    }
+
+    # Registry setup
+    $RegMDMLM = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM"
+    try {
+        if (-not (Test-Path $RegMDMLM)) {
+            New-Item -Path $RegMDMLM -Force -ErrorAction Stop
+            Write-Log "Created registry key: $RegMDMLM"
+        }
+        New-ItemProperty -Path $RegMDMLM -Name "AutoEnrollMDM" -PropertyType DWORD -Value 1 -Force
+        New-ItemProperty -Path $RegMDMLM -Name "UseAADCredentialType" -PropertyType DWORD -Value 1 -Force
+        New-ItemProperty -Path $RegMDMLM -Name "MDMApplicationId" -PropertyType String -Value $MDMApplicationId -Force
+        if ($MDMEnrollmentUrl) {
+            New-ItemProperty -Path $RegMDMLM -Name "EnrollmentServer" -PropertyType String -Value $MDMEnrollmentUrl -Force
+        }
+        Write-Log "Configured MDM registry settings"
+    } catch {
+        Write-Log "Failed to configure registry: $($_.Exception.Message)" -PrependText "ERROR"
+        Exit-Script -ReturnCode -1
+    }
+
+    # Clean up existing task
+    if (Get-ScheduledTask -TaskName "MDMAutoEnroll" -ErrorAction SilentlyContinue) {
+        Unregister-ScheduledTask -TaskName "MDMAutoEnroll" -Confirm:$false -ErrorAction SilentlyContinue
+        Write-Log "Removed existing MDMAutoEnroll task"
+    }
+
+    # Schedule task
+    $RunTime = (Get-Date).AddMinutes($RunDelayMinutes)
+    try {
+        $STPrin = New-ScheduledTaskPrincipal -UserID "NT AUTHORITY\SYSTEM" -LogonType S4U -RunLevel Highest
+        $Stset = New-ScheduledTaskSettingsSet -RunOnlyIfNetworkAvailable -DontStopOnIdleEnd -ExecutionTimeLimit (New-TimeSpan -Hours 1)
+        $actionUpdate = New-ScheduledTaskAction -Execute "%windir%\system32\deviceenroller.exe" -Argument "/c /AutoEnrollMDM"
+        $triggerUpdate = New-ScheduledTaskTrigger -Once -At $RunTime
+        Register-ScheduledTask -Trigger $triggerUpdate -Action $actionUpdate -Settings $Stset -TaskName "MDMAutoEnroll" -Principal $STPrin -Force -ErrorAction Stop
+        $TargetTask = Get-ScheduledTask -TaskName "MDMAutoEnroll"
+        $TargetTask.Triggers[0].EndBoundary = $RunTime.AddMinutes($ExpirationMinutes).ToString("yyyy-MM-dd'T'HH:mm:ss")
+        $TargetTask.Settings.DeleteExpiredTaskAfter = "PT0S"
+        $TargetTask | Set-ScheduledTask
+        Write-Log "Scheduled task MDMAutoEnroll registered"
+    } catch {
+        Write-Log "Failed to register scheduled task: $($_.Exception.Message)" -PrependText "ERROR"
+        Exit-Script -ReturnCode -2
+    }
+
+    Exit-Script -ReturnCode 0
+} catch {
+    Write-Log "Unhandled exception: $($_.Exception.Message)" -PrependText "ERROR"
+    Exit-Script -ReturnCode -999
+}
