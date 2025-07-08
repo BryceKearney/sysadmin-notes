@@ -31,8 +31,9 @@ Start-ADSyncSyncCycle Initial
 - **Use Case**: Run this when you need to re-sync all data, such as after major AD changes or schema updates.
 
 
+RUN POWERSHELL AS ADMIN.
 ```
-Start-ADSyncSyncCycle Delta  
+Start-ADSyncSyncCycle -PolicyType Delta  
 ```
 - **Purpose**: Triggers a delta synchronization cycle. - **RECOMMENDED for minor changes**
 - **Details**:
