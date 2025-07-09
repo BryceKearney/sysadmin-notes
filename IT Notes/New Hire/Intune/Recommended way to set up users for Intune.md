@@ -9,9 +9,12 @@ Remove it from Entra MFA
 Launch CMD as admin
 takeown /f "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /r /d y
 icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /grant "%username%:F" /t
-Change username above
+Change username above within %'s
+
 cd C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc
-del /F /S /Q *.*
+del /F /S /Q .
+
+Run above as one command
 
 
 # How to Reset Your PIN in Windows 11 CMD?
