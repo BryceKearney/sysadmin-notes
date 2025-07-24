@@ -9,7 +9,7 @@ Remove it from Entra MFA
 Launch CMD as admin
 takeown /f "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /r /d y
 icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /grant "%username%:F" /t
-Change username above within %'s
+run above seperate,
 
 cd C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc
 del /F /S /Q .
