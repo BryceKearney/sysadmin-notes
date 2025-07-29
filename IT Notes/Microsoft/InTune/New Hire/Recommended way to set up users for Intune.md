@@ -16,6 +16,26 @@ del /F /S /Q .
 
 Run above as one command
 
+### Recommending
+
+If you proceed with this method, **make sure to:**
+
+- **Re-secure the folder** after cleanup:
+    
+    cmd
+    
+    CopyEdit
+    
+    `icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /reset /T`
+    
+- And ideally, set it back to be owned by **SYSTEM**:
+    
+    cmd
+    
+    CopyEdit
+    
+    `icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /`
+
 
 # How to Reset Your PIN in Windows 11 CMD?
 
