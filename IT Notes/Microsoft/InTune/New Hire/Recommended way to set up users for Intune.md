@@ -22,12 +22,9 @@ If you proceed with this method, **make sure to:**
 
 - **Re-secure the folder** after cleanup:
     
-    cmd
+    takeown /f "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /r /a
     
-    CopyEdit
-    
-    `icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /reset /T`
-    
+    icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /setowner "NT AUTHORITY\SYSTEM" /t
 - And ideally, set it back to be owned by **SYSTEM**:
     
     cmd
