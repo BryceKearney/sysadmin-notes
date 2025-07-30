@@ -26,12 +26,13 @@ If you proceed with this method, **make sure to:**
     
     icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /setowner "NT AUTHORITY\SYSTEM" /t
 - And ideally, set it back to be owned by **SYSTEM**:
-    
-    cmd
-    
-    CopyEdit
-    
-    `icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /`
+
+
+icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc" /reset /t
+
+Check who owns it 
+
+icacls "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc"
 
 
 # How to Reset Your PIN in Windows 11 CMD?
